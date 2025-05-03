@@ -1,6 +1,6 @@
 CC = clang
 TARGET = --target=wasm32-unknown-wasi
-SYSROOT = --sysroot /tmp/wasi-libc
+SYSROOT = --sysroot /build/wasi-libc/sysroot
 LDFLAGS = -Wl,--no-entry -Wl,--export-all
 OUTPUT = calculator_world.wasm
 SOURCES = calculator_impl.c
